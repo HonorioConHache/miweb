@@ -243,18 +243,20 @@ main{
     background-repeat: no-repeat;
 }
 
-.main-currency-table .currency-table--date{
+.main-currency-table .currency-table--date{  
+    background-color: var(--color-soft-orange);
     width: 100%;
     height: 30px;
-    margin-top: 8px;
     font-size: 1.2rem;
     line-height: 1.4rem;
     text-align: center;
     font-weight: bold;
-    background-color: var(--color-soft-orange);
     text-align: center;
     border-radius: 5px;
     padding-top: 7px;
+    max-width: 294px;
+    margin: 0 auto;  
+    margin-top: 15px;
 }
 
 
@@ -321,40 +323,102 @@ main{
     color: #757575;    
 }
 
-.commissions-table--container .down{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    background-image: url('./assets/iconos/trending-down.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.commissions-table--container .up{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    background-image: url('./assets/iconos/trending-up.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .main-commissions-table .commissions-table--date{
     width: 100%;
     height: 30px;
-    margin-top: 8px;
     font-size: 1.2rem;
     line-height: 1.4rem;
     text-align: center;
     font-weight: bold;
-    background-color: #e7f5ff;
     text-align: center;
     border-radius: 5px;
     padding-top: 7px;
+    max-width: 294px;
+    margin: 0 auto;
+    background-color: #e7f5ff;    
+    margin-top: 15px;
+}
+
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--color-warm-black);
+}
+
+.product-detail--batatalogo{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 25px);
+    background-image: url('./assets/iconos/batata.svg');
+}
+
+.product-detail--tittle{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-detail--tittle h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--color-just-white);    
+}
+
+.product-detail--tittle p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail--cards{
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--color-black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--cards .clock{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/iconos/clock.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--cards .product--card-tittle{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--color-just-white);
+}
+
+.product-detail--cards .product--card-body{
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }
 
 /****************************** Fin del main *******************************/
