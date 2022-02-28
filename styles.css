@@ -1,0 +1,111 @@
+/* 
+Procedimientos para generar estilos.
+1. Posicionamiento.
+2. Modelo de caja.
+3. Tipografía.
+4. Estilos visuales.
+5. Otros.
+*/
+
+
+/* Aquí empieza la declaración de las variables */
+:root{
+--color-bitcoin-orange:#f7931a;
+--color-soft-orange:#ffe9d5;
+--color-secondary-blue:#1a9af7;
+--color-soft-blue:#e7f5ff;
+--color-warm-black:#201e1c;
+--color-black:#282623;
+--color-gray:#bababa;
+--color-off-white:#faf8f7;
+--color-just-white:#ffffff;
+}/* Aquí terminan las declaración de las variables */
+
+/* Selector universal */
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html{
+font-size: 62.5%;/* Conversión de rem a px, es decir. 10 px = 1 rem, 15 px =1.5 rem */
+font-family: 'DM Sans','sans-serif';
+}
+
+/****************************** Inicio del header *******************************/
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img{
+    width: 151px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header--container-tittle{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 50px;
+    text-align: center;
+    align-self: center;
+}
+
+.header--container-tittle h1{
+    font-size: 2.4rem;
+    color: var(--color-just-white);
+    line-height: 2.2rem;
+    font-weight: bold;
+}
+
+.header--container-tittle p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--color-soft-orange);
+}
+
+.header--container-tittle .header--button{
+    position: absolute; /* En absolute nos permite hacer uso de las propiedades Top, Left, Right */
+    top: 270px;
+    display: block;
+    margin: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--color-off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16); /* Con ésta línea agregamos sombra la botoón */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-black);
+    /* Regla para ajustar botón en el centro */
+    left: calc(50% - 150px );
+}
+
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/iconos/down-arrow.svg');
+}
+/****************************** Fin del header *******************************/
+
+
+
