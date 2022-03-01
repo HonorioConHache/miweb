@@ -386,7 +386,7 @@ main{
     width: 100%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--color-black);
@@ -449,6 +449,16 @@ main{
     height: 20px;
     margin-bottom: 10px;
     background-image: url('./assets/iconos/check-circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/imgs/bitcoinbaby2x.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
