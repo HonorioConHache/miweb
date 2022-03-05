@@ -506,6 +506,7 @@ main{
 
 .plans-container--card{
     position: relative;/* La idea es que el texto que sobresale tenga position: absolute */
+    scroll-snap-align: center; /* Animación scroll */
     width: 70%;
     min-width: 230px;
     max-width: 300px;
@@ -579,7 +580,16 @@ main{
     background-image: url('./assets/iconos/orange-right-arrow.svg');
     background-repeat: no-repeat;
     vertical-align: text-bottom;
-    
+}
+
+/* Scroll Horizontal */
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 20px;
 }
 
 
